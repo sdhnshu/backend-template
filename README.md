@@ -1,4 +1,4 @@
-# fastapi-postgresql-template
+# Backend Template
 
 # Installing
 - Install all the requirements in `requirements.txt`
