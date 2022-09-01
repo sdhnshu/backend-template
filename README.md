@@ -3,6 +3,7 @@
 # Installing
 - Install all the requirements in `requirements.txt`
 - Run `pre-commit install` and `pre-commit run --all-files`
+- Add a .env file with each config in a line like `URL=http://localhost:8000`
 
 # Debugging
 - Config file: `.vscode/launch.json`
