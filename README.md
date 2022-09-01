@@ -1,13 +1,13 @@
 # fastapi-postgresql-template
 
 # Installing
-Install all the requirements in `requirements.txt`
-Run `pre-commit install` and `pre-commit run --all-files`
+- Install all the requirements in `requirements.txt`
+- Run `pre-commit install` and `pre-commit run --all-files`
 
 # Debugging
-Config file: `.vscode/launch.json`
-Run using: VSCode debugger
-Features: add breakpoints, analyze variables, call stack
+- Config file: `.vscode/launch.json`
+- Run using: VSCode debugger
+- Features: add breakpoints, analyze variables, call stack
 
 # Features
 - Fastapi async `server` configured with `router` divided into `api` and `model` folders
