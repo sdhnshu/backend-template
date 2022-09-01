@@ -1,0 +1,17 @@
+# Server
+fastapi
+uvicorn[standard]
+pydantic[dotenv]
+
+# Database
+sqlalchemy[asyncio]
+asyncpg
+strawberry-graphql[debug-server]
+
+requests # Network calls
+flake8 # Linting
+black # Formatting
+isort # Formatting
+pytest # Testing
+loguru # logging
+pre-commit # Automation
