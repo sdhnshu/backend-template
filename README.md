@@ -1,16 +1,16 @@
 # Backend Template
 
-# Installing
+## Installing
 - Install all the requirements in `requirements.txt`
 - Run `pre-commit install` and `pre-commit run --all-files`
 - Add a .env file with each config in a line like `URL=http://localhost:8000`
 
-# Debugging
+## Debugging
 - Config file: `.vscode/launch.json`
 - Run using: VSCode debugger
 - Features: add breakpoints, analyze variables, call stack
 
-# Features
+## Features
 - Fastapi async `server` configured with `router` divided into `api` and `model` folders
 - `Routers` are designed as per `Resource` (eg: Author, Book)
 - Logging module setup with file logging with daily rotation enabled
@@ -25,5 +25,5 @@
 - Run script `./run.sh`
 - Docker Build and push script `./build.sh`
 
-# ToDo
+## ToDo
 - Alembic integration for table structure management
