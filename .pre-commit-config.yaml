@@ -1,37 +1,28 @@
-default_language_version:
-  python: python3
 repos:
-  - repo: local
-    hooks:
-      # - id: black
-      #   entry: black
-      #   name: black
-      #   language: python
-      # - id: flake8
-      #   entry: flake8
-      #   name: flake8
-      #   language: python
-      - id: isort
-        entry: isort
-        name: isort
-        language: python
-  # - repo: https://gitlab.com/pycqa/flake8
-  #   rev: 5.0.4
+  # - repo: https://github.com/pre-commit/pre-commit-hooks
+  #   rev: v4.3.0
   #   hooks:
-  #     - id: flake8
-  #       # additional_dependencies: ["flake8-bugbear"]
-  # - repo: https://github.com/PyCQA/bandit
-  #   rev: 1.6.2
-  #   hooks:
-  #     - id: bandit
-  #       args: ["-ll"]
-  #       files: .py$
+  #   - id: check-yaml
+  #   - id: end-of-file-fixer
+  #   - id: trailing-whitespace
+
   # - repo: https://github.com/asottile/seed-isort-config
   #   rev: v2.2.0
   #   hooks:
-  #     - id: seed-isort-config
-  #   - repo: https://github.com/pycqa/isort
-  #   rev: 5.10.1
-  #   hooks:
-  #     - id: isort
-  #       name: isort (python)
+  #   - id: seed-isort-config
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.10.1
+    hooks:
+    - id: isort
+
+  - repo: https://github.com/psf/black
+    rev: 22.8.0
+    hooks:
+    - id: black
+      language_version: python3.10
+
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 5.0.4
+    hooks:
+    - id: flake8
